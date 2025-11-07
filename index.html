@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tucontenedoruy | Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/1eaf7c2824.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+    <div class="pantalla-de-carga">
+        <div class="loader"></div>
+    </div>
+    <!-- Secciones: Inicio, catálogo, opiniones, pedidos, contacto-->
+    <header>
+        <div class="logo">
+            <img  class="logo" src="img/logo.png" alt="">
+        </div>
+        <ul id="menuList">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#opiniones">Opiniones</a></li>
+            <li><a href="#pedidos">Pedidos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section id="inicio">
+        <div class="banner">
+            <h1>Glassteck UY</h1>
+            <h3><i>Cerramientos y Fachadas de Lujo</i></h3>
+        </div>
+    </section>
+
+    <main>
+        <!-- <section id="inicio">
+            <div class="sobre-nosotros">
+                <div class="sn-texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet assumenda velit ratione.
+                    Nostrum alias culpa repudiandae dolore ipsum quo incidunt fugiat aliquid nemo earum repellat,
+                    excepturi quibusdam dolorem cumque?
+                </div>
+                <div class="sn-imagen"></div>
+            </div>
+        </section> -->
+        <section id="galeria">
+        <div class="galeria">
+            <h1>Mira lo que te ofrecemos: </h1>
+            <div class="parent">
+                <div class="div1 sonGrid"><img src="img/imagen1.jpg" alt=""></div>
+                <div class="div2 sonGrid"><img src="img/imagen2.jpg" alt=""></div>
+                <div class="div3 sonGrid"><img src="img/imagen3.jpg" alt=""></div>
+                <div class="div4 sonGrid"><img src="img/imagen4.jpg" alt=""></div>
+                <div class="div5 sonGrid"><img src="img/imagen5.jpg" alt=""></div>
+                <div class="div6 sonGrid"><img src="img/imagen6.jpg" alt=""></div>
+            </div>
+        </div>
+        </section>
+        <!-- Opiniones -->
+        <section class="opiniones" id="opiniones">
+            <h2>Opiniones de nuestros clientes</h2>
+            <div class="op-contenedor">
+                <div class="op">
+                    <h3>Cliente 1</h3>
+                    <i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</i>
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="op">
+                    <h3>Cliente 2</h3>
+                    <i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</i>
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="op">
+                    <h3>Cliente 3</h3>
+                    <i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</i>
+                    <div class="estrellas">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pedidos">
+            <h2>¡Dinos que te interesa!</h2>
+            <div class="interes-formulario">
+                <div class="entradas">
+                    <select>
+                        <option>Seleccionar Opción</option>
+                        <option>Vidrios 1</option>
+                        <option>vidrios 2</option>
+                        <option>fachada 1</option>
+                        <option>fachadas 2</option>
+                        <option>imobiliario 1</option>
+                        <option>imobiliario 2</option>
+                    </select>
+                </div>
+                <div class="actions">
+                    <button>Haznoslo Saber</button>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contactate con Nosotros</h2>
+            <p>Si quieres mas información, no dudes en escribirnos.</p>
+            <form>
+                <label>Nombre completo</label>
+                <input type="text" placeholder="Nombre" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="tu@email.com" required>
+
+                <label>Tu Dirección</label>
+                <input type="text" placeholder="Av Italia 1160" required>
+
+                <label>Mensaje</label>
+                <textarea rows="4" placeholder="¿Qué necesitas?"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contactanos en:</p>
+        <a href="tel:+59891123456">+598 91 123 456</a>
+        <br>
+        <a href="https://www.instagram.com/glasstek_uy/"><i class="fa-brands fa-instagram"></i>
+            <p>@glasstek_uy</p>
+        </a>
+        <br>
+        <p>&copy; 2024 Glasstek UY. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        let menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+       document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(".pantalla-de-carga").style.display = "block";
+            } else {
+                document.querySelector(".pantalla-de-carga").style.display = "none";
+            }
+        };
+        
+
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
